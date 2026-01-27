@@ -63,23 +63,7 @@ export default function Hero() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10 animate-fade-in-up animation-delay-400">
-              <Link href="#projects" className="w-full sm:w-auto">
-                <button className="w-full inline-flex items-center justify-center gap-2 font-semibold rounded-xl bg-primary text-white hover:bg-white hover:text-black hover:-translate-y-0.5 transition-all duration-300 px-8 py-4 text-lg group">
-                  Voir mes projets
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
-              </Link>
-              <a 
-                href="https://wa.me/237677259325?text=Bonjour%20!%20Je%20souhaite%20discuter%20sur%20WhatsApp%20avec%20vous."
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto"
-              >
-                <button className="w-full inline-flex items-center justify-center gap-2 font-semibold rounded-xl border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 px-8 py-4 text-lg">
-                  <MessageCircle className="w-5 h-5 text-[#25D366]" />
-                  WhatsApp
-                </button>
-              </a>
+              {/* Boutons supprimés */}
             </div>
 
             {/* Stats */}

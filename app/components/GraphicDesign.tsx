@@ -17,12 +17,10 @@ export default function GraphicDesign() {
     animate: {
       x: [0, -1000],
       transition: {
-        x: {
-          repeat: Infinity,
-          repeatType: "loop",
-          duration: 20,
-          ease: "linear",
-        },
+        repeat: Infinity,
+        repeatType: "loop" as const,
+        duration: 20,
+        ease: "linear",
       },
     },
   };
