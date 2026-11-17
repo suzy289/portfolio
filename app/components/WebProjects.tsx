@@ -51,7 +51,7 @@ export default function WebProjects() {
                                 src={project.image}
                                 alt={project.title}
                                 fill
-                                className="object-cover opacity-60 group-hover:opacity-40 transition-opacity"
+                                className={`${"imageFit" in project && project.imageFit === "contain" ? "object-contain" : "object-cover"} opacity-60 group-hover:opacity-40 transition-opacity`}
                             />
                          )}
                          <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent"></div>

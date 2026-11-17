@@ -75,7 +75,7 @@ export default function About() {
               Votre vision, <br />mon expertise <span className="text-[#FF4500]">technique</span>.
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed mb-8">
-              Je transforme des concepts abstraits en solutions digitales concrètes. Mon objectif est simple : créer des outils qui servent votre croissance tout en offrant une expérience utilisateur irréprochable.
+              Designer UI/UX, développeuse web et analyste de données, j&apos;accompagne chaque projet de l&apos;analyse des besoins jusqu&apos;à la mise en production : maquettes, interfaces et développement. Diplômée en génie logiciel, je conçois des solutions pour des entreprises au Cameroun et à l&apos;international.
             </p>
             <a href="#contact" className="inline-flex items-center gap-3 bg-[#111] text-white px-6 py-3 rounded-full font-bold uppercase text-xs tracking-wider hover:bg-[#FF4500] transition-colors group">
               <span>Me contacter</span>

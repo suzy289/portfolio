@@ -5,9 +5,9 @@
 // Informations personnelles
 export const PERSONAL_INFO = {
   name: "Suzy Noumbissi",
-  role: "Développeuse Web, Designer & Analyste SI",
+  role: "Designer UI/UX, Développeuse Web & Analyste de données",
   tagline: "Je transforme vos idées en solutions digitales performantes et esthétiques",
-  description: `Passionnée par la création d'expériences digitales exceptionnelles, je combine développement web, design UI/UX et analyse de systèmes d'information pour créer des solutions qui font la différence. De la conception à la mise en production, j'accompagne entreprises et entrepreneurs dans leur transformation numérique.`,
+  description: `Designer UI/UX, développeuse web et analyste de données, j'accompagne un projet de l'analyse des besoins jusqu'à la mise en production : maquettage, interfaces et développement. Diplômée en génie logiciel, je conçois des sites, applications et jeux pour des entreprises au Cameroun et à l'international.`,
   location: "Yaoundé, Cameroun",
   email: "suzy.noumbissi@gmail.com",
   phone: "+237 677 259 325", // Numéro mis à jour
@@ -71,6 +71,9 @@ export const SKILLS = [
   "IntelliJ",
   "XAMPP",
   "tldraw",
+  "Figma",
+  "MySQL",
+  "SQL Server",
 ];
 
 // Projets Web
@@ -163,9 +166,9 @@ export const WEB_PROJECTS = [
   {
     id: 6,
     title: "Ludo Game",
-    type: "Jeu Web",
+    type: "Jeu · Afriksolution",
     description:
-      "Version web interactive et multijoueur du célèbre jeu de société Ludo. Une expérience ludique directement dans le navigateur.",
+      "Jeu de Ludo en ligne développé pour Afriksolution, la même entreprise que Deux Dés, et proposé sur FunandPay. Partie multijoueur directement dans le navigateur.",
     technologies: ["React", "Game Logic", "CSS Modules"],
     image: "/images/projects/ludo.jpg",
     liveUrl: "https://ludo-frontend-nine.vercel.app/",
@@ -174,7 +177,164 @@ export const WEB_PROJECTS = [
       "Logique de jeu temps réel",
       "Interface interactive",
       "Multijoueur",
-      "Animations fluides",
+      "Réalisé pour Afriksolution",
+    ],
+  },
+  {
+    id: 7,
+    title: "J & J Consulting",
+    type: "Cabinet comptable",
+    description:
+      "Site du cabinet d'audit, de comptabilité et de conseil fiscal J & J Consulting SARL à Yaoundé. Présentation des services, prise de rendez-vous et demande de devis.",
+    technologies: ["Next.js", "Tailwind CSS", "React"],
+    image: "/images/projects/jj-consulting.jpg",
+    liveUrl: "https://consulting-sarl-j-j.vercel.app/",
+    githubUrl: null,
+    highlights: [
+      "Cabinet d'expertise comptable",
+      "Prise de rendez-vous",
+      "Présentation des services",
+      "Devis en ligne",
+    ],
+  },
+  {
+    id: 8,
+    title: "GAB Mobile Wallet",
+    type: "Umdeny SARL",
+    description:
+      "Site vitrine du projet principal d'Umdeny SARL : la commercialisation du GAB Mobile Wallet, infrastructure de cash-in et cash-out en Afrique.",
+    technologies: ["Next.js", "Tailwind CSS", "React"],
+    image: "/images/projects/mobile-wallet.jpg",
+    liveUrl: "https://site-mobile-wallet.vercel.app/",
+    githubUrl: null,
+    highlights: [
+      "Commercialisation du GAB",
+      "Mobile Money",
+      "Offres franchise et SaaS",
+      "Projet Umdeny SARL",
+    ],
+  },
+  {
+    id: 9,
+    title: "Hans Lens",
+    type: "Portfolio · Dubaï",
+    description:
+      "Portfolio d'un vidéaste, monteur et photographe basé à Dubaï. Présentation des réalisations, du showreel et des services de création de contenu.",
+    technologies: ["Next.js", "Tailwind CSS", "React"],
+    image: "/images/projects/ets-hans.jpg",
+    liveUrl: "https://ets-hans.vercel.app/",
+    githubUrl: null,
+    highlights: [
+      "Portfolio créateur de contenu",
+      "Montage, photo et tournage",
+      "Basé à Dubaï",
+      "Showreel intégré",
+    ],
+  },
+  {
+    id: 10,
+    title: "Global Alpha Hunt",
+    type: "Trading · Dubaï",
+    description:
+      "Formulaire de l'entreprise Global Alpha Hunt, basée à Dubaï et spécialisée dans le trading et l'analyse des marchés financiers.",
+    technologies: ["Next.js", "React Forms", "Tailwind CSS"],
+    image: "",
+    liveUrl: "https://rolack-trading.vercel.app/",
+    githubUrl: null,
+    highlights: [
+      "Formulaire de contact",
+      "Trading et analyse de marchés",
+      "Entreprise basée à Dubaï",
+      "Parcours de prise de contact",
+    ],
+  },
+  {
+    id: 11,
+    title: "La Puol",
+    type: "E-commerce · En cours",
+    description:
+      "Projet personnel en cours de développement : place de commerce pour les commerçants, acheteurs, revendeurs et consommateurs. Restaurants, boutiques, pharmacies et services, livrés à domicile.",
+    technologies: ["Next.js", "E-commerce", "Tailwind CSS"],
+    image: "/images/projects/la-puol.jpg",
+    liveUrl: "https://la-puol.vercel.app/",
+    githubUrl: null,
+    highlights: [
+      "Projet personnel",
+      "Commerçants et consommateurs",
+      "Plusieurs univers de vente",
+      "En cours de développement",
+    ],
+  },
+  {
+    id: 12,
+    title: "ulif.app",
+    type: "Éducation financière",
+    description:
+      "Site et application d'éducation financière développés en équipe chez ULIF SARL. Réalisation de toute la partie visible, ainsi que des maquettes web et mobile sur Figma.",
+    technologies: ["UI/UX", "Figma", "Front-end"],
+    image: "/images/projects/ulif.jpg",
+    liveUrl: "https://ulif.app/fr/",
+    githubUrl: null,
+    highlights: [
+      "Travail en équipe chez ULIF SARL",
+      "Toute la partie visible",
+      "Formations et séminaires",
+      "Maquettes Figma web et mobile",
+    ],
+  },
+  {
+    id: 13,
+    title: "Deux Dés",
+    type: "Jeu · Afriksolution",
+    description:
+      "Jeu des deux dés, jeu d'actualité en ligne développé pour Afriksolution et disponible sur FunandPay. Parties, scores et historique directement dans le navigateur.",
+    technologies: ["React", "Game Logic", "CSS"],
+    image: "/images/projects/deux-des.jpg",
+    liveUrl: "https://deux-d-s.vercel.app/",
+    githubUrl: null,
+    highlights: [
+      "Jeu en ligne Afriksolution",
+      "Disponible sur FunandPay",
+      "Deux dés et tours de jeu",
+      "Historique de partie",
+    ],
+  },
+  {
+    id: 14,
+    title: "Klassa",
+    type: "E-learning",
+    description:
+      "Maquette mobile de Klassa, une application d'e-learning. Design réalisé sur Figma : accueil, onboarding et suivi de la progression des élèves.",
+    technologies: ["Figma", "UI mobile", "E-learning"],
+    image: "/images/projects/klassa.png",
+    imageFit: "contain",
+    liveUrl:
+      "https://www.figma.com/design/jDZqPeFOdmARNCdFCw3YLW/Sans-titre?node-id=0-1&t=L0usI5sqK1jXqweL-1",
+    githubUrl: null,
+    highlights: [
+      "Design mobile sur Figma",
+      "Projet Klassa",
+      "Interfaces mobile",
+      "En cours",
+    ],
+  },
+  {
+    id: 15,
+    title: "Maquette Mobile Wallet",
+    type: "Maquette Figma",
+    description:
+      "Maquette du site Mobile Wallet réalisée sur Figma, en amont du site de commercialisation du GAB pour Umdeny SARL.",
+    technologies: ["Figma", "UI/UX", "Web"],
+    image: "/images/projects/mobile-wallet-maquette.png",
+    imageFit: "contain",
+    liveUrl:
+      "https://www.figma.com/design/p5nC0dbv1amQVkue6tHjij/Suzy-Noumbissi-s-team-library?t=L0usI5sqK1jXqweL-1",
+    githubUrl: null,
+    highlights: [
+      "Maquette Figma",
+      "Site Mobile Wallet",
+      "Projet Umdeny SARL",
+      "Design d'interface",
     ],
   },
 ];

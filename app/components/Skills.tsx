@@ -27,6 +27,9 @@ const skillColors: { [key: string]: string } = {
   "IntelliJ": "#FE315D",
   "XAMPP": "#FB7A24",
   "tldraw": "#F9A8D4",
+  "Figma": "#F24E1E",
+  "MySQL": "#4479A1",
+  "SQL Server": "#CC2927",
 };
 
 export default function Skills() {
@@ -134,7 +137,7 @@ export default function Skills() {
 
                     {/* Card Content */}
                     <div
-                      className="relative bg-[#101828] border-2 border-[#FF4500] rounded-xl p-2 md:p-3 shadow-lg hover:shadow-2xl transition-all duration-300 group-hover:scale-110 min-w-[90px] md:min-w-[110px] text-white"
+                      className="relative bg-[#101828] border-2 border-[#FF4500] rounded-xl p-2 md:p-3 shadow-lg hover:shadow-2xl transition-all duration-300 group-hover:scale-110 min-w-[76px] md:min-w-[92px] text-white"
                       style={{ borderColor: color }}
                     >
                       {/* Top Bar Decoration */}

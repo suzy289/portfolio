@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
@@ -21,6 +21,12 @@ export default function Header() {
     { name: "Projets", href: "#projects" },
     { name: "À propos", href: "#about" },
   ];
+
+  const whatsappUrl =
+    "https://wa.me/237677259325?text=Bonjour%20!%20Je%20souhaite%20discuter%20sur%20WhatsApp%20avec%20vous.";
+
+  const scrolledText = "text-foreground hover:text-primary";
+  const topText = "text-white hover:text-primary";
 
   return (
     <header
@@ -48,7 +54,7 @@ export default function Header() {
                 style={{ transformStyle: "preserve-3d" }}
               />
             </motion.div>
-            <span className={`text-xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-white'}`}>
+            <span className={`text-xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? "text-foreground" : "text-white"}`}>
               Suzy<span className="text-primary">.dev</span>
             </span>
           </Link>
@@ -59,10 +65,10 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-medium transition-colors relative group ${isScrolled ? 'text-black hover:text-primary' : 'text-white hover:text-primary'}`}
+                className={`text-sm font-medium transition-colors relative group ${isScrolled ? scrolledText : topText}`}
               >
                 {link.name.replace(/:$/g, "")}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
               </Link>
             ))}
           </nav>
@@ -70,7 +76,7 @@ export default function Header() {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <Link
-              href="https://wa.me/237677259325?text=Bonjour%20!%20Je%20souhaite%20discuter%20sur%20WhatsApp%20avec%20vous."
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2.5 rounded-full bg-primary text-white font-semibold hover:bg-primary/80 transition-all flex items-center gap-2 text-sm"
@@ -80,13 +86,24 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className={`md:hidden p-2 transition-colors duration-300 ${isScrolled ? 'text-black' : 'text-white'}`}
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="flex md:hidden items-center gap-2">
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-[#25D366] text-white text-xs font-bold shadow-lg"
+            >
+              <MessageCircle size={16} />
+              WhatsApp
+            </a>
+            <button
+              className={`p-2 rounded-lg transition-colors duration-300 ${isScrolled ? "text-foreground" : "text-white"}`}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label={isMobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -97,19 +114,28 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-background/95 backdrop-blur-xl border-b border-white/10 overflow-hidden"
+            className="md:hidden bg-white shadow-xl border-b border-black/10 overflow-hidden"
           >
-            <nav className="flex flex-col p-4 space-y-4">
+            <nav className="flex flex-col p-4 gap-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-gray-300 hover:text-white font-medium py-2 border-b border-white/5"
+                  className="text-[#111827] font-semibold py-3 px-3 rounded-lg border border-black/10 bg-[#f3f4f6]"
                 >
                   {link.name}
                 </Link>
               ))}
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] text-white font-bold py-3"
+              >
+                <MessageCircle size={18} />
+                Discuter sur WhatsApp
+              </a>
             </nav>
           </motion.div>
         )}

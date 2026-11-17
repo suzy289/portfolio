@@ -33,39 +33,39 @@ export default function Experience() {
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-2">
-                Analyste SI & Développeuse Web Full-Stack
+                Designer UI/UX, Développeuse Web & Analyste de données
               </h3>
-              <p className="text-gray-600 mb-4">Freelance / En entreprise</p>
+              <p className="text-gray-600 mb-4">ULIF SARL · Umdeny SARL · Koryx SARL · Freelance</p>
             </div>
           </div>
 
           <ul className="space-y-3 mb-6">
             <li className="flex items-start gap-3">
               <CheckCircle2 size={20} className="text-green-500 flex-shrink-0 mt-1" />
-              <span>Analyse et modélisation des systèmes d&apos;information</span>
+              <span>Partie visible du site et de l&apos;application d&apos;éducation financière ulif.app, au sein d&apos;ULIF SARL</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle2 size={20} className="text-green-500 flex-shrink-0 mt-1" />
-              <span>Développement de sites web et applications sur mesure</span>
+              <span>Site de commercialisation du GAB Mobile Wallet pour Umdeny SARL</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle2 size={20} className="text-green-500 flex-shrink-0 mt-1" />
-              <span>Conception d&apos;interfaces UI/UX modernes</span>
+              <span>Sites et formulaires : J &amp; J Consulting, Hans Lens, Global Alpha Hunt, Kazimo, Meriaz, DAYIPTV</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle2 size={20} className="text-green-500 flex-shrink-0 mt-1" />
-              <span>Création d&apos;identités visuelles et supports graphiques</span>
+              <span>Jeux en ligne Deux Dés et Ludo pour Afriksolution, et e-commerce La Puol</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle2 size={20} className="text-green-500 flex-shrink-0 mt-1" />
-              <span>Accompagnement des entreprises dans leur transformation digitale</span>
+              <span>Maquettes Figma (Klassa, Mobile Wallet, ULIF) et affiches sur Photoshop</span>
             </li>
           </ul>
 
           <div className="border-t pt-6">
             <h4 className="font-semibold mb-3">Domaines d&apos;intervention :</h4>
             <div className="flex flex-wrap gap-2">
-              {["Entreprises locales", "Startups et PME", "Entrepreneurs", "Associations"].map(
+              {["Fintech", "Éducation financière", "E-commerce", "Jeux web", "Cabinets & PME", "Créateurs"].map(
                 (domain, idx) => (
                   <span
                     key={idx}

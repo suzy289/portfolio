@@ -28,10 +28,10 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-xl mb-4">{PERSONAL_INFO.name}</h3>
             <p className="text-sm text-gray-400 mb-2">
-              Développeuse Web • Designer • Analyste SI
+              Développeuse Web • Designer UI/UX • Analyste de données
             </p>
             <p className="text-sm text-gray-400">
-              Créatrice de solutions digitales sur mesure pour entreprises et
+              Sites, applications, maquettes et jeux pour entreprises et
               entrepreneurs.
             </p>
           </div>
